@@ -2,11 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My portfolio</title>
+    <title>Jkk84's portfolio</title>
 </head>
 <body>
 
-<h1>Test message</h1>
+<h1>Jkk84's portfolio</h1>
+
+{% load static %}
+
+<a href="{% static 'portfolio/cv.pdf' %}">Resume</a>
+
+<img src="{% static 'portfolio/me.jpg' %}">
 
 {% for project in projects %}
 
