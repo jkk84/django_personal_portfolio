@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -9,8 +10,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    {% load static %}
-
     <link rel="stylesheet" type="text/css" href="{% static 'portfolio/custom.css' %}">
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
@@ -19,14 +18,19 @@
 
     <title>Jkk84's page</title>
 </head>
-{% load static %}
 <body>
-<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-    <a class="navbar-brand" href="#">
+<nav class="navbar navbar-light sticky-top" style="background-color: #e3f2fd;">
+    <a class="navbar-brand" href="{% url 'home' %}">
         <img src="{% static 'portfolio/logo.png' %}" width="30" height="30" class="d-inline-block align-top" alt="">
-        Jaroslaw
+        Jarek
     </a>
-
+    <ul class="nav nav-pills justify-content-end ml-auto">
+        <li class="nav-item"><a class="nav-link" href="{% static 'portfolio/cv.pdf' %}" target="_blank">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">LinkedIn</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Twitter</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://github.com/jkk84" target="_blank">GitHub</a></li>
+        <li class="nav-item"><button class="btn btn-outline-success" type="button" onclick="location.href='{% url 'blog:all_blogs' %}'">Blog</button></li>
+    </ul>
 </nav>
 
 {% block content %}{% endblock %}
