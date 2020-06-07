@@ -13,3 +13,38 @@ body {
     #blogdetailtitle {
         font-size: 5rem;
     }
+
+.navbar .nav-link {
+    color: rgba(0,0,0,.5) !important;
+}
+
+.navbar .nav-link:hover {
+    color: rgb(40,167,69) !important;
+}
+
+.portfoliohr {
+    height:2px;
+    border-width:0;
+    color:gray;
+    background-color:gray;
+}
+
+.nav a {
+    font-size: 1.8em !important;
+}
+
+.nav button {
+    font-size: 1.8em !important;
+}
+
+.navbar-brand {
+    font-size: 1.8em !important;
+}
+
+.card {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
