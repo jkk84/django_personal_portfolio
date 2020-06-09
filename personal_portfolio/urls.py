@@ -17,12 +17,14 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
-from portfolio import views
+from portfolio import views as portfolio_views
+from passgenerator import views as passgenerator_views
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
+    path('', portfolio_views.home, name='home'),
+    path('passgenerator/', passgenerator_views.passgenerator, name="passgenerator"),
     path('blog/', include('blog.urls')),
 ]
 
