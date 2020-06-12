@@ -12,20 +12,23 @@
 <hr class="portfoliohr">
 
 <div class="row row-cols-1 row-cols-md-4">
-{% for project in projects %}
-<div class="col mb-4">
-    <div class="card">
-      <img src="{{ project.image.url }}" class="card-img-top" alt="{{ project.title }}">
-      <div class="card-body">
-        <h5 class="card-title">{{ project.title }}</h5>
-        <p class="card-text">{{ project.description }}</p>
-        {% if project.url %}
-        <a href="{{ project.url }}" class="btn btn-primary" target="_blank">Go to project</a>
-        {% endif %}
-      </div>
+    {% for project in projects %}
+    <div class="col mb-4">
+        <div class="card">
+            <img src="{{ project.image.url }}" class="card-img-top" alt="{{ project.title }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ project.title }}</h5>
+                <p class="card-text">{{ project.description }}</p>
+                {% if project.url %}
+                <a href="{{ project.url }}" class="btn btn-primary" target="_blank">Go to project</a>
+                {% endif %}
+                {% if project.internal_url %}
+                <a href="{{ project.internal_url }}" class="btn btn-primary" target="_blank">Go to project</a>
+                {% endif %}
+            </div>
+        </div>
     </div>
-</div>
-{% endfor %}
+    {% endfor %}
 </div>
 
 {% endblock %}
