@@ -2,10 +2,6 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
-#blogtitle {
-    font-size: 6rem;
-}
-
 @media (min-width: 992px) {
     #hometext {
         font-size: 4rem;
@@ -47,4 +43,8 @@ body {
     margin: 0 auto; /* Added */
     float: none; /* Added */
     margin-bottom: 10px; /* Added */
+}
+
+.blog_detail {
+    text-align:center;
 }

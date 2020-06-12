@@ -7,7 +7,7 @@ def passgenerator(request):
 	if request.GET.get('uppercase'):
 		characters.extend(list('ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
 	if request.GET.get('special'):
-		characters.extend(['`','~','!','@','#','$','%','^','&','*','(',')','_','-','+','=','{','[','}','}','|','\\',':',';','"',"'",'<',',','>','.','?','/'])
+		characters.extend(['`','~','!','@','#','$','%','^','&','*','(',')','_','-','+','=','{','[',']','}','|',':',';','"',"'",'<',',','>','.','?','/'])
 		# characters.extend(list('!@#$%^&*()'))
 	if request.GET.get('numbers'):
 		characters.extend(list('0123456789'))

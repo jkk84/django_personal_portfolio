@@ -3,7 +3,7 @@
 {% block content %}
 
 <div class="container text-center">
-  <h1>Password Generator</h1>
+  Password Generator
 
   <form>
     <select name="length">
@@ -24,11 +24,12 @@
       <option value="22">22</option>
     </select> Length
     <br>
-    <input type="checkbox" name="uppercase"> Uppercase
+    <h6>Lowercases are included (abc...)</h6>
+    <input type="checkbox" name="uppercase"> Uppercase (ABC...)
     <br>
-    <input type="checkbox" name="numbers"> Numbers
+    <input type="checkbox" name="numbers"> Numbers (0123...)
     <br>
-    <input type="checkbox" name="special"> Special Characters
+    <input type="checkbox" name="special"> Special Characters (!@#...)
     <br>
 
     <input type="submit" value="Generate Password" class="btn btn-primary">
