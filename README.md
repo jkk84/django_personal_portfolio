@@ -1,1 +1,1 @@
-My portfolio based on some udemy course :)
+My portfolio based on some course, unfinished ;)
